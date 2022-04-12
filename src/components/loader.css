@@ -1,0 +1,37 @@
+div.circles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotate 3s linear infinite;
+    transform-origin: bottom center;
+}
+div.circle1{
+    display: inline-block;
+    background-color: purple;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin:5px;
+    animation: grow 1.5s linear infinite;
+     transform: scale(0);
+}
+div.circle2{
+    background-color:palevioletred ;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin:5px;
+    animation: grow 1.5s linear infinite;
+    transform: scale(0);
+    animation-delay: 0.75s;
+}
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes grow{
+    50%{
+        transform:scale(1);
+    }
+}
